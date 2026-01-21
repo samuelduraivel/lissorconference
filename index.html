@@ -26,7 +26,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700&display=swap');
         
-        /* Updated Hero Background with Image Overlay */
+        /* Hero Background with Image Overlay */
         .hero-bg {
             background-color: #4B0082;
             background-image: linear-gradient(rgba(75, 0, 130, 0.85), rgba(50, 0, 100, 0.9)), url('https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
@@ -55,27 +55,33 @@
 <body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen">
 
     <div class="bg-white border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="flex items-center gap-4 flex-1">
-                    <img src="loyola.jpeg" onerror="this.src='https://placehold.co/100x100?text=Loyola+Logo'" alt="Loyola College Logo" class="h-16 w-auto object-contain">
-                    <div class="text-xs sm:text-sm text-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-col xl:flex-row items-center justify-between gap-6">
+                
+                <div class="flex items-center gap-4 flex-1 text-center sm:text-left">
+                    <img src="loyola.jpeg" onerror="this.src='https://placehold.co/150x150?text=Loyola+Logo'" alt="Loyola College Logo" class="h-24 w-auto object-contain">
+                    <div class="text-sm text-gray-700">
                         <p class="font-bold text-loyolaPurple">Organised by</p>
-                        <p class="font-semibold">Loyola Institute of Social Research (LISSOR)</p>
-                        <p>Loyola College, Vettavalam (An Associate Institution of Loyola College, Chennai)</p>
+                        <p class="font-bold text-lg">Loyola College, Vettavalam</p>
+                        <p class="text-xs text-gray-500">(An Associate Institution of Loyola College, Chennai)</p>
                         <p class="text-xs text-gray-500">Tamil Nadu, India</p>
                     </div>
                 </div>
 
-                <div class="hidden md:block w-px h-12 bg-gray-300"></div>
-
-                <div class="flex items-center gap-4 flex-1 justify-end text-right">
-                    <div class="text-xs sm:text-sm text-gray-700">
-                        <p class="font-bold text-loyolaPurple">In collaboration with</p>
-                        <p class="font-semibold">Ruth S. Ammon College of Education and Health Sciences</p>
-                        <p>Adelphi University, Garden City, New York, USA</p>
+                <div class="flex-shrink-0 order-first xl:order-none mb-4 xl:mb-0">
+                    <div class="flex flex-col items-center">
+                        <img src="lissor.jpeg" onerror="this.src='https://placehold.co/120x120?text=LISSOR'" alt="LISSOR Logo" class="h-28 w-auto object-contain">
+                        <p class="text-xs font-bold text-loyolaPurple mt-2 text-center">LISSOR<br><span class="text-gray-500 font-normal">Loyola Institute of Science<br>and Social Research</span></p>
                     </div>
-                    <img src="ruth.jpeg" onerror="this.src='https://placehold.co/100x100?text=Adelphi+Logo'" alt="Ruth S. Ammon College Logo" class="h-16 w-auto object-contain">
+                </div>
+
+                <div class="flex items-center gap-4 flex-1 justify-end text-center sm:text-right">
+                    <div class="text-sm text-gray-700">
+                        <p class="font-bold text-loyolaPurple">In collaboration with</p>
+                        <p class="font-bold leading-tight">Ruth S. Ammon College of <br>Education & Health Sciences</p>
+                        <p class="text-xs">Adelphi University, New York, USA</p>
+                    </div>
+                    <img src="ruth.jpeg" onerror="this.src='https://placehold.co/150x150?text=Adelphi+Logo'" alt="Ruth S. Ammon College Logo" class="h-24 w-auto object-contain">
                 </div>
             </div>
         </div>
@@ -85,15 +91,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-center h-14">
                 <div class="hidden md:block">
-                    <div class="flex items-baseline space-x-8">
+                    <div class="flex items-baseline space-x-6">
                         <a href="#home" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
-                        <a href="#submission" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">Call for Papers</a>
-                        <a href="#about" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                        <a href="#hosts" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">About Host Institutions</a>
+                        <a href="#about" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">About the Conference</a>
+                        <a href="#submission" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">Call for Paper</a>
                         <a href="#exhibition" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">Exhibition</a>
                         <a href="#contact" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">Contact</a>
                     </div>
                 </div>
-                <div class="md:hidden flex space-x-4 text-sm text-white font-bold">
+                <div class="md:hidden flex space-x-4 text-sm text-white font-bold overflow-x-auto whitespace-nowrap px-2 py-3">
+                    <a href="#hosts">Hosts</a>
                     <a href="#submission">Papers</a>
                     <a href="#exhibition">Exhibition</a>
                     <a href="#contact">Contact</a>
@@ -128,10 +136,55 @@
                 </div>
             </div>
             
-            </div>
+        </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <section id="hosts" class="pt-10 -mt-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-loyolaPurple mb-4">About Host Institutions</h2>
+                <div class="w-24 h-1 bg-loyolaYellow mx-auto rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg border-t-4 border-loyolaPurple p-6 hover:shadow-xl transition">
+                    <img src="loyola.jpeg" onerror="this.src='https://placehold.co/100x100?text=Loyola'" class="h-16 w-auto mb-4 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 text-center mb-2">Loyola College, Vettavalam</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed text-justify">
+                        Run by the Jesuits, Loyola College is committed to providing quality higher education to the rural youth. As an associate institution of Loyola College, Chennai, it focuses on holistic formation and academic excellence.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg border-t-4 border-loyolaYellow p-6 hover:shadow-xl transition">
+                    <img src="lissor.jpeg" onerror="this.src='https://placehold.co/100x100?text=LISSOR'" class="h-16 w-auto mb-4 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 text-center mb-2">LISSOR</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed text-justify">
+                        Loyola Institute of Science and Social Research (LISSOR) fosters a culture of inquiry and innovation, bridging the gap between scientific advancement and social reality through impactful research.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg border-t-4 border-loyolaPurple p-6 hover:shadow-xl transition">
+                    <img src="ruth.jpeg" onerror="this.src='https://placehold.co/100x100?text=Adelphi'" class="h-16 w-auto mb-4 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 text-center mb-2">Ruth S. Ammon College</h3>
+                    <p class="text-xs text-center text-gray-500 mb-2 font-bold">Adelphi University, New York, USA</p>
+                    <p class="text-gray-600 text-sm leading-relaxed text-justify">
+                        The Ruth S. Ammon College of Education and Health Sciences prepares students to become changemakers, advocates, and champions for social justice through research, collaboration, and leadership. The School of Education offers distinguished undergraduate and graduate programs, while the School of Health Sciences provides comprehensive degrees in Communication Sciences and Disorders.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <section id="about" class="text-center max-w-4xl mx-auto pt-10 -mt-10">
+            <h2 class="text-3xl font-bold text-loyolaPurple mb-6">About the Conference</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                ICCE 2026 is a premier gathering of global minds dedicated to comprehensive education. Under the theme <strong>"Empowerment Beyond Barriers"</strong>, we aim to bridge the gap between policy, practice, and innovation. The conference serves as a catalyst for creating inclusive environments that celebrate diversity and foster equitable learning opportunities for all.
+            </p>
+        </section>
+
+        <hr class="border-gray-200">
 
         <section id="submission" class="grid md:grid-cols-2 gap-12 items-start pt-10 -mt-10">
             <div class="space-y-6">
@@ -183,15 +236,6 @@
                     </button>
                 </form>
             </div>
-        </section>
-
-        <hr class="border-gray-200">
-
-        <section id="about" class="text-center max-w-4xl mx-auto pt-10 -mt-10">
-            <h2 class="text-3xl font-bold text-loyolaPurple mb-6">About the Conference</h2>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                ICCE 2026 is a premier gathering of global minds dedicated to comprehensive education. Under the theme <strong>"Empowerment Beyond Barriers"</strong>, we aim to bridge the gap between policy, practice, and innovation. The conference serves as a catalyst for creating inclusive environments that celebrate diversity and foster equitable learning opportunities for all.
-            </p>
         </section>
 
         <hr class="border-gray-200">
@@ -350,6 +394,29 @@
                 </div>
             </div>
         </section>
+
+        <section id="collaborators" class="py-6">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 uppercase tracking-wide">Institutional Collaborators</h2>
+                <div class="w-16 h-1 bg-loyolaPurple mx-auto mt-2"></div>
+                <p class="text-gray-600 text-sm mt-3 font-medium">Partnering with NGOs and Institutions globally</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center opacity-90">
+                <div class="p-4 bg-white rounded shadow hover:shadow-lg transition w-full flex justify-center h-24 items-center border border-gray-100">
+                    <img src="stmarys1.jpeg" onerror="this.src='https://placehold.co/150x80?text=St.+Marys+1'" alt="Collaborator 1" class="max-h-20 max-w-full object-contain">
+                </div>
+                <div class="p-4 bg-white rounded shadow hover:shadow-lg transition w-full flex justify-center h-24 items-center border border-gray-100">
+                    <img src="stmarys2.jpeg" onerror="this.src='https://placehold.co/150x80?text=St.+Marys+2'" alt="Collaborator 2" class="max-h-20 max-w-full object-contain">
+                </div>
+                <div class="p-4 bg-white rounded shadow hover:shadow-lg transition w-full flex justify-center h-24 items-center border border-gray-100">
+                    <img src="uba.jpeg" onerror="this.src='https://placehold.co/150x80?text=UBA'" alt="Unnat Bharat Abhiyan" class="max-h-20 max-w-full object-contain">
+                </div>
+                <div class="p-4 bg-white rounded shadow hover:shadow-lg transition w-full flex justify-center h-24 items-center border border-gray-100">
+                    <img src="stmarys3.jpeg" onerror="this.src='https://placehold.co/150x80?text=St.+Marys+3'" alt="Collaborator 3" class="max-h-20 max-w-full object-contain">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer id="contact" class="bg-loyolaPurple text-white py-12 mt-auto">
@@ -388,6 +455,7 @@
                      <h4 class="text-xl font-bold text-loyolaYellow mb-4">Quick Links</h4>
                      <ul class="space-y-2 text-purple-200">
                          <li><a href="#home" class="hover:text-white hover:underline">Home</a></li>
+                         <li><a href="#hosts" class="hover:text-white hover:underline">About Host Institutions</a></li>
                          <li><a href="#submission" class="hover:text-white hover:underline">Submit Paper</a></li>
                          <li><a href="#exhibition" class="hover:text-white hover:underline">Exhibition Packages</a></li>
                          <li><a href="#" class="hover:text-white hover:underline">Privacy Policy</a></li>
@@ -402,5 +470,4 @@
     </footer>
 
 </body>
-
 </html>
