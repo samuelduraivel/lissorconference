@@ -89,8 +89,9 @@
 
     <nav class="bg-loyolaPurple sticky top-0 z-50 shadow-xl border-t border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-center h-16">
-                <div class="hidden md:block">
+            <div class="flex items-center justify-between h-16">
+                
+                <div class="hidden md:flex justify-center w-full">
                     <div class="flex items-baseline space-x-1">
                         <a href="#home" class="text-white hover:bg-white/20 hover:text-loyolaYellow px-4 py-2 rounded-md text-sm font-semibold transition uppercase tracking-wide">Home</a>
                         <a href="#hosts" class="text-white hover:bg-white/20 hover:text-loyolaYellow px-4 py-2 rounded-md text-sm font-semibold transition uppercase tracking-wide">About Hosts</a>
@@ -100,12 +101,25 @@
                         <a href="#contact" class="text-white hover:bg-white/20 hover:text-loyolaYellow px-4 py-2 rounded-md text-sm font-semibold transition uppercase tracking-wide">Contact</a>
                     </div>
                 </div>
-                <div class="md:hidden flex space-x-4 text-sm text-white font-bold overflow-x-auto whitespace-nowrap px-2 py-3 w-full justify-between">
-                    <a href="#hosts">Hosts</a>
-                    <a href="#submission" class="text-loyolaYellow">Submit</a>
-                    <a href="#exhibition">Stalls</a>
-                    <a href="#contact">Contact</a>
+
+                <div class="md:hidden flex items-center justify-between w-full">
+                    <a href="#home" class="text-white font-serif font-bold text-lg tracking-wide">ICCE '26</a>
+                    
+                    <button id="mobile-menu-btn" class="text-white hover:text-loyolaYellow focus:outline-none p-2 rounded hover:bg-white/10 transition">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
                 </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-loyolaDarkPurple border-t border-white/10 shadow-lg absolute w-full left-0 top-16">
+            <div class="px-4 pt-4 pb-6 space-y-2 flex flex-col">
+                <a href="#home" onclick="toggleMenu()" class="text-white hover:text-loyolaYellow py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wide">Home</a>
+                <a href="#hosts" onclick="toggleMenu()" class="text-white hover:text-loyolaYellow py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wide">About Hosts</a>
+                <a href="#about" onclick="toggleMenu()" class="text-white hover:text-loyolaYellow py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wide">About Conference</a>
+                <a href="#submission" onclick="toggleMenu()" class="text-loyolaYellow font-bold py-3 border-b border-white/10 text-sm uppercase tracking-wide">Submit Proposal</a>
+                <a href="#exhibition" onclick="toggleMenu()" class="text-white hover:text-loyolaYellow py-3 border-b border-white/10 text-sm font-semibold uppercase tracking-wide">Exhibition</a>
+                <a href="#contact" onclick="toggleMenu()" class="text-white hover:text-loyolaYellow py-3 text-sm font-semibold uppercase tracking-wide">Contact</a>
             </div>
         </div>
     </nav>
@@ -391,5 +405,17 @@
         </div>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+        
+        document.getElementById('mobile-menu-btn').addEventListener('click', toggleMenu);
+    </script>
 </body>
 </html>
