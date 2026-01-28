@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICCE 2026 - International Conference on Comprehensive Education</title>
+    <title>ICCE 2026 - Call for Proposals</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script>
@@ -14,162 +14,163 @@
                         loyolaPurple: '#4B0082', // Indigo/Purple
                         loyolaYellow: '#FFD700', // Gold/Yellow
                         loyolaLightPurple: '#E6E6FA',
+                        loyolaDarkPurple: '#2E0050',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                         serif: ['Merriweather', 'serif'],
-                    }
+                        tamil: ['"Noto Sans Tamil"', 'sans-serif'],
+                    },
                 }
             }
         }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
         
-        /* Hero Background with Image Overlay */
-        .hero-bg {
-            background-color: #4B0082;
-            background-image: linear-gradient(rgba(75, 0, 130, 0.85), rgba(50, 0, 100, 0.9)), url('https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+        html {
+            scroll-behavior: smooth;
         }
         
+        /* Ensure high quality image rendering */
+        img {
+            image-rendering: -webkit-optimize-contrast;
+        }
+
         .glass-card {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-
-        .gradient-text {
-            background: linear-gradient(to right, #4B0082, #6a1b9a);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen">
 
-    <div class="bg-white border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <div class="flex flex-col xl:flex-row items-center justify-between gap-6">
-                
-                <div class="flex items-center gap-4 flex-1 text-center sm:text-left">
-                    <img src="loyola.jpeg" onerror="this.src='https://placehold.co/150x150?text=Loyola+Logo'" alt="Loyola College Logo" class="h-24 w-auto object-contain">
-                    <div class="text-sm text-gray-700">
-                        <p class="font-bold text-loyolaPurple">Organised by</p>
-                        <p class="font-bold text-lg">Loyola College, Vettavalam</p>
-                        <p class="text-xs text-gray-500">(An Associate Institution of Loyola College, Chennai)</p>
-                        <p class="text-xs text-gray-500">Tamil Nadu, India</p>
-                    </div>
-                </div>
+    <div class="relative w-full h-[650px] overflow-hidden bg-gray-900" id="home">
+        
+        <img src="chennai.png" onerror="this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f0bd44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'" alt="Chennai Background" class="absolute inset-0 w-full h-full object-cover opacity-85">
+        
+        <div class="absolute top-0 left-0 right-0 h-48 bg-gradient-to-b from-black/80 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-loyolaDarkPurple/95 via-loyolaDarkPurple/50 to-transparent"></div>
 
-                <div class="flex-shrink-0 order-first xl:order-none mb-4 xl:mb-0">
-                    <div class="flex flex-col items-center">
-                        <img src="lissor.jpg" onerror="this.src='https://placehold.co/120x120?text=LISSOR'" alt="LISSOR Logo" class="h-28 w-auto object-contain">
-                        <p class="text-xs font-bold text-loyolaPurple mt-2 text-center">LISSOR<br><span class="text-gray-500 font-normal">Loyola Institute of Science<br>and Social Research</span></p>
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-4 flex-1 justify-end text-center sm:text-right">
-                    <div class="text-sm text-gray-700">
-                        <p class="font-bold text-loyolaPurple">In collaboration with</p>
-                        <p class="font-bold leading-tight">Ruth S. Ammon College of <br>Education & Health Sciences</p>
-                        <p class="text-xs">Adelphi University, New York, USA</p>
-                    </div>
-                    <img src="ruth.jpeg" onerror="this.src='https://placehold.co/150x150?text=Adelphi+Logo'" alt="Ruth S. Ammon College Logo" class="h-24 w-auto object-contain">
+        <div class="absolute top-0 left-0 w-full p-6 md:p-8 flex flex-col md:flex-row justify-between items-start z-20 gap-8">
+            
+            <div class="flex items-center gap-4">
+                <img src="loyola.jpeg" onerror="this.src='https://placehold.co/120x120/FFF/000?text=Loyola'" alt="Loyola Logo" class="h-20 w-20 md:h-24 md:w-24 rounded-full border-2 border-white shadow-lg bg-white object-contain">
+                <div class="text-white drop-shadow-md">
+                    <h2 class="font-serif font-bold text-xl md:text-2xl leading-none tracking-wide">LOYOLA COLLEGE</h2>
+                    <p class="text-sm font-sans font-medium uppercase tracking-wider text-loyolaYellow mt-1">Vettavalam</p>
                 </div>
             </div>
+
+            <div class="hidden md:block absolute left-1/2 -translate-x-1/2 top-8">
+                <img src="lissor.png" onerror="this.src='https://placehold.co/120x120/FFF/000?text=LISSoR'" alt="LISSoR Logo" class="h-24 w-auto drop-shadow-lg">
+            </div>
+
+            <div class="flex items-center gap-4 text-right ml-auto md:ml-0">
+                <div class="text-white drop-shadow-md whitespace-nowrap hidden sm:block">
+                    <div class="font-bold text-base md:text-lg leading-tight">Ruth S. Ammon College</div>
+                    <div class="text-xs md:text-sm leading-tight font-medium opacity-90 mt-0.5">of Education and Health Sciences,</div>
+                    <div class="font-semibold text-xs md:text-sm leading-tight mt-0.5">Adelphi University, New York, USA</div>
+                </div>
+                <img src="ruth.jpeg" onerror="this.src='https://placehold.co/120x120/FFF/000?text=Adelphi'" alt="Adelphi USA Logo" class="h-20 w-20 md:h-24 md:w-auto drop-shadow-lg bg-white/90 rounded p-1 object-contain">
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full px-8 py-10 md:px-12 md:py-14 text-white z-20">
+            <p class="font-sans text-xl md:text-2xl text-loyolaYellow font-medium tracking-wide drop-shadow-md mb-2">
+                July 23rd – 25th, 2026 | Chennai, India
+            </p>
+            <h1 class="font-serif text-4xl md:text-6xl font-bold tracking-tight drop-shadow-lg leading-tight">
+                CALL FOR PROPOSALS: ICCE ’26
+            </h1>
         </div>
     </div>
 
-    <nav class="bg-loyolaPurple sticky top-0 z-50 shadow-md">
+    <nav class="bg-loyolaPurple sticky top-0 z-50 shadow-xl border-t border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-center h-14">
+            <div class="flex items-center justify-center h-16">
                 <div class="hidden md:block">
-                    <div class="flex items-baseline space-x-6">
-                        <a href="#home" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
-                        <a href="#hosts" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">About Host Institutions</a>
-                        <a href="#about" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">About the Conference</a>
-                        <a href="#submission" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">Call for Paper</a>
-                        <a href="#exhibition" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">Exhibition</a>
-                        <a href="#contact" class="text-white hover:bg-white/10 hover:text-loyolaYellow px-3 py-2 rounded-md text-sm font-medium transition">Contact</a>
+                    <div class="flex items-baseline space-x-1">
+                        <a href="#home" class="text-white hover:bg-white/20 hover:text-loyolaYellow px-4 py-2 rounded-md text-sm font-semibold transition uppercase tracking-wide">Home</a>
+                        <a href="#hosts" class="text-white hover:bg-white/20 hover:text-loyolaYellow px-4 py-2 rounded-md text-sm font-semibold transition uppercase tracking-wide">About Hosts</a>
+                        <a href="#about" class="text-white hover:bg-white/20 hover:text-loyolaYellow px-4 py-2 rounded-md text-sm font-semibold transition uppercase tracking-wide">About Conference</a>
+                        <a href="#submission" class="bg-loyolaYellow text-loyolaPurple hover:bg-yellow-400 px-4 py-2 rounded-md text-sm font-bold transition uppercase tracking-wide shadow-md ml-2">Submit Proposal</a>
+                        <a href="#exhibition" class="text-white hover:bg-white/20 hover:text-loyolaYellow px-4 py-2 rounded-md text-sm font-semibold transition uppercase tracking-wide">Exhibition</a>
+                        <a href="#contact" class="text-white hover:bg-white/20 hover:text-loyolaYellow px-4 py-2 rounded-md text-sm font-semibold transition uppercase tracking-wide">Contact</a>
                     </div>
                 </div>
-                <div class="md:hidden flex space-x-4 text-sm text-white font-bold overflow-x-auto whitespace-nowrap px-2 py-3">
+                <div class="md:hidden flex space-x-4 text-sm text-white font-bold overflow-x-auto whitespace-nowrap px-2 py-3 w-full justify-between">
                     <a href="#hosts">Hosts</a>
-                    <a href="#submission">Papers</a>
-                    <a href="#exhibition">Exhibition</a>
+                    <a href="#submission" class="text-loyolaYellow">Submit</a>
+                    <a href="#exhibition">Stalls</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header id="home" class="hero-bg text-white relative overflow-hidden flex-grow flex items-center justify-center min-h-[500px]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10 text-center">
-            
-            <span class="inline-block py-1 px-3 rounded-full bg-loyolaYellow text-loyolaPurple text-sm font-bold mb-6 uppercase tracking-wider shadow-lg">
-                July 23 - 25, 2026
-            </span>
-            
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 drop-shadow-md">
-                International Conference on<br>
-                <span class="text-loyolaYellow">Comprehensive Education</span> <span class="whitespace-nowrap">(ICCE-'26)</span>
-            </h1>
-            
-            <p class="text-xl md:text-2xl font-light text-gray-200 italic mb-8">
-                "Empowerment Beyond Barriers"
-            </p>
-
-            <div class="flex flex-col items-center justify-center gap-3 text-lg font-medium">
-                <div class="flex items-center text-white">
-                    <i class="fas fa-map-marker-alt text-loyolaYellow mr-2"></i>
-                    Chennai, Tamil Nadu, India
+    <section class="bg-white py-12 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto text-center px-4">
+             <h2 class="text-3xl md:text-5xl font-serif font-bold text-loyolaPurple mb-4 leading-tight">
+                3rd International Conference on <br>
+                Comprehensive Education (ICCE-'26)
+             </h2>
+             
+             <p class="text-lg md:text-2xl font-light text-gray-700 mb-8 border-b-2 border-loyolaYellow inline-block pb-4 max-w-4xl leading-relaxed">
+                "<strong>Empowerment Beyond Barriers</strong>: Global Perspectives on Education, Development and Innovation for individuals with Disabilities"
+             </p>
+             
+             <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12 text-gray-800 font-medium text-lg">
+                <div class="flex items-center">
+                   <i class="fas fa-map-marker-alt text-loyolaPurple mr-2 text-xl"></i> 
+                   Chennai, Tamil Nadu, India
                 </div>
-                <div class="flex items-center bg-white/10 px-6 py-2 rounded-lg backdrop-blur-sm border border-white/20">
-                    Venue: To be Announced
+                <div class="flex items-center">
+                   <i class="fas fa-building text-loyolaPurple mr-2 text-xl"></i> 
+                   Venue: To be Announced
                 </div>
-            </div>
-            
+             </div>
         </div>
-    </header>
+    </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 
-        <section id="hosts" class="pt-10 -mt-10">
+        <section id="hosts" class="pt-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-loyolaPurple mb-4">About Host Institutions</h2>
+                <h2 class="text-3xl font-bold text-loyolaPurple mb-4 font-serif">About Host Institutions</h2>
                 <div class="w-24 h-1 bg-loyolaYellow mx-auto rounded"></div>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg border-t-4 border-loyolaPurple p-6 hover:shadow-xl transition">
-                    <img src="loyola.jpeg" onerror="this.src='https://placehold.co/100x100?text=Loyola'" class="h-16 w-auto mb-4 mx-auto">
+                <div class="bg-white rounded-xl shadow-lg border-t-4 border-loyolaPurple p-6 hover:shadow-xl transition group">
+                    <div class="h-20 flex items-center justify-center mb-4">
+                        <img src="loyola.jpeg" onerror="this.src='https://placehold.co/100x100?text=Loyola'" class="h-16 w-auto group-hover:scale-110 transition duration-300">
+                    </div>
                     <h3 class="text-xl font-bold text-gray-800 text-center mb-2">Loyola College, Vettavalam</h3>
                     <p class="text-gray-600 text-sm leading-relaxed text-justify">
                         Run by the Jesuits, Loyola College is committed to providing quality higher education to the rural youth. As an associate institution of Loyola College, Chennai, it focuses on holistic formation and academic excellence.
                     </p>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-lg border-t-4 border-loyolaYellow p-6 hover:shadow-xl transition">
-                    <img src="lissor.jpg" onerror="this.src='https://placehold.co/100x100?text=LISSOR'" class="h-16 w-auto mb-4 mx-auto">
+                <div class="bg-white rounded-xl shadow-lg border-t-4 border-loyolaYellow p-6 hover:shadow-xl transition group">
+                    <div class="h-20 flex items-center justify-center mb-4">
+                        <img src="lissor.png" onerror="this.src='https://placehold.co/100x100?text=LISSOR'" class="h-16 w-auto group-hover:scale-110 transition duration-300">
+                    </div>
                     <h3 class="text-xl font-bold text-gray-800 text-center mb-2">LISSOR</h3>
                     <p class="text-gray-600 text-sm leading-relaxed text-justify">
                         Loyola Institute of Science and Social Research (LISSOR) fosters a culture of inquiry and innovation, bridging the gap between scientific advancement and social reality through impactful research.
                     </p>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-lg border-t-4 border-loyolaPurple p-6 hover:shadow-xl transition">
-                    <img src="ruth.jpeg" onerror="this.src='https://placehold.co/100x100?text=Adelphi'" class="h-16 w-auto mb-4 mx-auto">
+                <div class="bg-white rounded-xl shadow-lg border-t-4 border-loyolaPurple p-6 hover:shadow-xl transition group">
+                    <div class="h-20 flex items-center justify-center mb-4">
+                        <img src="ruth.jpeg" onerror="this.src='https://placehold.co/100x100?text=Adelphi'" class="h-16 w-auto group-hover:scale-110 transition duration-300">
+                    </div>
                     <h3 class="text-xl font-bold text-gray-800 text-center mb-2">Ruth S. Ammon College</h3>
                     <p class="text-xs text-center text-gray-500 mb-2 font-bold">Adelphi University, New York, USA</p>
                     <p class="text-gray-600 text-sm leading-relaxed text-justify">
-                        The Ruth S. Ammon College of Education and Health Sciences prepares students to become changemakers, advocates, and champions for social justice through research, collaboration, and leadership. The School of Education offers distinguished undergraduate and graduate programs, while the School of Health Sciences provides comprehensive degrees in Communication Sciences and Disorders.
+                        The Ruth S. Ammon College of Education and Health Sciences prepares students to become changemakers, advocates, and champions for social justice through research, collaboration, and leadership.
                     </p>
                 </div>
             </div>
@@ -177,18 +178,18 @@
 
         <hr class="border-gray-200">
 
-        <section id="about" class="text-center max-w-4xl mx-auto pt-10 -mt-10">
-            <h2 class="text-3xl font-bold text-loyolaPurple mb-6">About the Conference</h2>
+        <section id="about" class="text-center max-w-4xl mx-auto pt-20 -mt-20">
+            <h2 class="text-3xl font-bold text-loyolaPurple mb-6 font-serif">About the Conference</h2>
             <p class="text-lg text-gray-700 leading-relaxed">
-                ICCE 2026 is a premier gathering of global minds dedicated to comprehensive education. Under the theme <strong>"Empowerment Beyond Barriers"</strong>, we aim to bridge the gap between policy, practice, and innovation. The conference serves as a catalyst for creating inclusive environments that celebrate diversity and foster equitable learning opportunities for all.
+                ICCE 2026 is a premier gathering of global minds dedicated to comprehensive education. Focused on the theme <strong>"Empowerment Beyond Barriers: Global Perspectives on Education, Development and Innovation for individuals with Disabilities"</strong>, we aim to bridge the gap between policy, practice, and innovation. The conference serves as a catalyst for creating inclusive environments that celebrate diversity and foster equitable learning opportunities for all.
             </p>
         </section>
 
         <hr class="border-gray-200">
 
-        <section id="submission" class="grid md:grid-cols-2 gap-12 items-start pt-10 -mt-10">
+        <section id="submission" class="grid md:grid-cols-2 gap-12 items-start pt-20 -mt-20">
             <div class="space-y-6">
-                <h2 class="text-3xl font-bold text-loyolaPurple border-l-4 border-loyolaYellow pl-4">Call for Papers</h2>
+                <h2 class="text-3xl font-bold text-loyolaPurple border-l-4 border-loyolaYellow pl-4 font-serif">Call for Papers</h2>
                 <p class="text-gray-600 leading-relaxed">
                     We invite researchers, academicians, and practitioners to submit their original work for ICCE 2026. Join us in shaping the future of inclusive education through innovative research and dialogue.
                 </p>
@@ -202,7 +203,7 @@
                 </div>
             </div>
 
-            <div class="glass-card p-8 rounded-2xl shadow-xl">
+            <div class="glass-card p-8 rounded-2xl shadow-xl bg-white">
                 <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                     <i class="fas fa-file-upload text-loyolaPurple mr-3"></i> Submit Your Work
                 </h3>
@@ -240,9 +241,9 @@
 
         <hr class="border-gray-200">
 
-        <section id="exhibition" class="pt-10 -mt-10">
+        <section id="exhibition" class="pt-20 -mt-20">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-loyolaPurple mb-4">Exhibition Stall Packages</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-loyolaPurple mb-4 font-serif">Exhibition Stall Packages</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Enhance engagement between academia, industry, civil society, and innovators. Choose the partnership level that suits your organization.</p>
             </div>
 
@@ -258,18 +259,12 @@
                             <span class="text-4xl font-bold text-gray-800">₹25,000</span>
                             <span class="text-gray-500 block text-sm mt-1">Inclusive of GST</span>
                         </div>
-                        <ul class="space-y-4 text-gray-600 mb-8">
+                        <ul class="space-y-4 text-gray-600 mb-8 text-sm">
                             <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Standard stall (10 ft × 10 ft)</li>
                             <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Duration: 3 Days</li>
                             <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> 2 Complimentary registrations</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Logo on website & programme</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Half-page acknowledgement</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Certificate of Appreciation</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Logo on website</li>
                         </ul>
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <p class="text-xs font-bold text-gray-500 uppercase mb-2">Ideal For</p>
-                            <p class="text-sm text-gray-700">Mid-sized publishers, NGOs, start-ups, training providers, social enterprises.</p>
-                        </div>
                     </div>
                     <div class="p-4 bg-gray-50 border-t border-gray-100 text-center">
                          <a href="#contact" class="block w-full py-2 border border-gray-300 text-gray-700 font-bold rounded hover:bg-gray-100 transition">Book Silver</a>
@@ -287,19 +282,11 @@
                             <span class="text-5xl font-bold text-gray-800">₹35,000</span>
                             <span class="text-gray-500 block text-sm mt-1">Inclusive of GST</span>
                         </div>
-                        <ul class="space-y-4 text-gray-600 mb-8">
-                            <li class="flex items-start"><i class="fas fa-star text-loyolaYellow mt-1 mr-2"></i> <strong>Premium stall (10 ft × 10 ft)</strong></li>
-                            <li class="flex items-start"><i class="fas fa-star text-loyolaYellow mt-1 mr-2"></i> <strong>Priority placement (High Traffic)</strong></li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Duration: 3 Days</li>
+                        <ul class="space-y-4 text-gray-600 mb-8 text-sm">
+                            <li class="flex items-start"><i class="fas fa-star text-loyolaYellow mt-1 mr-2"></i> <strong>Premium stall</strong></li>
                             <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> 3 Complimentary registrations</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Logo on Website, Banner & Booklet</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Full-page acknowledgement</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Promo materials at Registration</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Logo on Banner & Booklet</li>
                         </ul>
-                        <div class="bg-purple-50 p-4 rounded-lg">
-                            <p class="text-xs font-bold text-purple-800 uppercase mb-2">Ideal For</p>
-                            <p class="text-sm text-gray-700">Assistive tech companies, EdTech firms, major publishers, CSR initiatives, national NGOs.</p>
-                        </div>
                     </div>
                     <div class="p-4 bg-gray-50 border-t border-gray-100 text-center">
                         <a href="#contact" class="block w-full py-3 bg-loyolaPurple text-white font-bold rounded shadow hover:bg-purple-800 transition">Book Gold Package</a>
@@ -316,104 +303,36 @@
                             <span class="text-4xl font-bold text-gray-800">₹15,000</span>
                             <span class="text-gray-500 block text-sm mt-1">Inclusive of GST</span>
                         </div>
-                        <ul class="space-y-4 text-gray-600 mb-8">
+                        <ul class="space-y-4 text-gray-600 mb-8 text-sm">
                             <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Standard stall (10 ft × 10 ft)</li>
                             <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Duration: 3 Days</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> 1 Complimentary registration</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Name listed in programme</li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Certificate of Appreciation</li>
                         </ul>
-                        <div class="bg-gray-50 p-4 rounded-lg mt-auto">
-                            <p class="text-xs font-bold text-gray-500 uppercase mb-2">Ideal For</p>
-                            <p class="text-sm text-gray-700">Small publishers, start-ups, community organisations, independent innovators.</p>
-                        </div>
                     </div>
                     <div class="p-4 bg-gray-50 border-t border-gray-100 text-center">
                         <a href="#contact" class="block w-full py-2 border border-gray-300 text-gray-700 font-bold rounded hover:bg-gray-100 transition">Book Bronze</a>
                     </div>
                 </div>
             </div>
-
-            <div class="mt-16 bg-white p-8 rounded-xl shadow-md border-l-4 border-loyolaPurple">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-xl font-bold text-loyolaPurple mb-3">Custom Sponsorship</h3>
-                        <p class="text-gray-600 mb-4">
-                            Interested in Principal sponsorship, Keynote sponsorship, or customized packages? We welcome partnerships that align with our mission.
-                        </p>
-                        <a href="#contact" class="text-loyolaPurple font-semibold hover:underline">Contact Committee &rarr;</a>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-loyolaPurple mb-3">Concessional Packages</h3>
-                        <p class="text-gray-600 mb-4">
-                            Limited concessional packages available for disability-focused NGOs, assistive-tech start-ups, and social enterprises (Subject to approval).
-                        </p>
-                    </div>
-                </div>
-            </div>
         </section>
 
-        <section class="bg-gray-100 rounded-xl p-8">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-4">Exhibitor Terms & Information</h3>
-            
-            <div class="grid md:grid-cols-2 gap-8 text-sm">
-                <div>
-                    <h4 class="font-bold text-loyolaPurple mb-2"><i class="fas fa-calendar-alt mr-2"></i>Schedule & Logistics</h4>
-                    <ul class="space-y-2 text-gray-700 mb-6">
-                        <li><strong>Setup:</strong> July 22, 2026 (Evening)</li>
-                        <li><strong>Breakdown:</strong> July 25, 2026 (Evening)</li>
-                        <li><strong>Assistance:</strong> Setup assistance provided.</li>
-                        <li><strong>Travel/Stay:</strong> Borne by exhibitor.</li>
-                    </ul>
-
-                    <h4 class="font-bold text-loyolaPurple mb-2"><i class="fas fa-money-bill-wave mr-2"></i>Payment & Cancellation</h4>
-                    <ul class="space-y-2 text-gray-700">
-                        <li><strong>Advance:</strong> 50% required at booking (Before May 2026).</li>
-                        <li><strong>Balance:</strong> Due by July 1, 2026.</li>
-                        <li><strong>Refunds:</strong> 
-                            <br><span class="pl-4">June 1 - June 15: 50% refund</span>
-                            <br><span class="pl-4">After June 15: No refund</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="font-bold text-loyolaPurple mb-2"><i class="fas fa-wheelchair mr-2"></i>Accessibility Compliance (Mandatory)</h4>
-                    <p class="text-gray-600 mb-3">Exhibitors must ensure accessibility for all participants:</p>
-                    <ul class="list-disc list-inside space-y-1 text-gray-700 mb-6">
-                        <li>Accessible signage and information displays</li>
-                        <li>Wheelchair-accessible stall layout</li>
-                        <li>Alternative formats for printed materials (upon request)</li>
-                        <li>Trained staff to assist visitors with diverse needs</li>
-                    </ul>
-
-                    <h4 class="font-bold text-loyolaPurple mb-2"><i class="fas fa-check-circle mr-2"></i>Content Approval</h4>
-                    <p class="text-gray-600">
-                        All materials must be relevant to disability inclusion, accessibility, and inclusive education. The organizing committee reserves the right to approve all content.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="collaborators" class="py-6">
+        <section id="collaborators" class="py-6 border-t border-gray-200">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 uppercase tracking-wide">Institutional Collaborators</h2>
+                <h2 class="text-2xl font-bold text-gray-800 uppercase tracking-wide font-serif">Institutional Collaborators</h2>
                 <div class="w-16 h-1 bg-loyolaPurple mx-auto mt-2"></div>
-                <p class="text-gray-600 text-sm mt-3 font-medium">Partnering with NGOs and Institutions globally</p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center opacity-90">
-                <div class="p-4 bg-white rounded shadow hover:shadow-lg transition w-full flex justify-center h-24 items-center border border-gray-100">
-                    <img src="stmarys1.jpeg" onerror="this.src='https://placehold.co/150x80?text=St.+Marys+1'" alt="Collaborator 1" class="max-h-20 max-w-full object-contain">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="p-4 w-full flex justify-center h-24 items-center">
+                    <img src="stmarys1.jpeg" onerror="this.src='https://placehold.co/150x80?text=St.+Marys+1'" alt="Collaborator 1" class="max-h-16 max-w-full object-contain">
                 </div>
-                <div class="p-4 bg-white rounded shadow hover:shadow-lg transition w-full flex justify-center h-24 items-center border border-gray-100">
-                    <img src="stmarys2.jpeg" onerror="this.src='https://placehold.co/150x80?text=St.+Marys+2'" alt="Collaborator 2" class="max-h-20 max-w-full object-contain">
+                <div class="p-4 w-full flex justify-center h-24 items-center">
+                    <img src="stmarys2.jpeg" onerror="this.src='https://placehold.co/150x80?text=St.+Marys+2'" alt="Collaborator 2" class="max-h-16 max-w-full object-contain">
                 </div>
-                <div class="p-4 bg-white rounded shadow hover:shadow-lg transition w-full flex justify-center h-24 items-center border border-gray-100">
-                    <img src="uba.jpeg" onerror="this.src='https://placehold.co/150x80?text=UBA'" alt="Unnat Bharat Abhiyan" class="max-h-20 max-w-full object-contain">
+                <div class="p-4 w-full flex justify-center h-24 items-center">
+                    <img src="uba.jpeg" onerror="this.src='https://placehold.co/150x80?text=UBA'" alt="Unnat Bharat Abhiyan" class="max-h-16 max-w-full object-contain">
                 </div>
-                <div class="p-4 bg-white rounded shadow hover:shadow-lg transition w-full flex justify-center h-24 items-center border border-gray-100">
-                    <img src="stmarys3.jpeg" onerror="this.src='https://placehold.co/150x80?text=St.+Marys+3'" alt="Collaborator 3" class="max-h-20 max-w-full object-contain">
+                <div class="p-4 w-full flex justify-center h-24 items-center">
+                    <img src="stmarys3.jpeg" onerror="this.src='https://placehold.co/150x80?text=St.+Marys+3'" alt="Collaborator 3" class="max-h-16 max-w-full object-contain">
                 </div>
             </div>
         </section>
@@ -423,7 +342,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8 mb-8 border-b border-purple-800 pb-8">
                  <div>
-                    <h4 class="text-xl font-bold text-loyolaYellow mb-4">Contact Us</h4>
+                    <h4 class="text-xl font-bold text-loyolaYellow mb-4 font-serif">Contact Us</h4>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt mt-1 mr-3 text-purple-300"></i>
@@ -441,35 +360,36 @@
                 </div>
 
                 <div>
-                    <h4 class="text-xl font-bold text-loyolaYellow mb-4">Payment Details</h4>
+                    <h4 class="text-xl font-bold text-loyolaYellow mb-4 font-serif">Payment Details</h4>
                     <div class="bg-purple-900/50 p-4 rounded-lg">
                         <p class="text-purple-200 font-semibold">Account Name: LISSOR</p>
                         <p class="text-purple-300 text-sm mt-1">Bank: City Union Bank</p>
                         <p class="text-purple-300 text-sm">Account No: XXXXXXXXXXXX</p>
                         <p class="text-purple-300 text-sm">IFSC: CUB0000XXX</p>
-                        <p class="text-purple-200 italic text-xs mt-3 opacity-75">(Official QR Code coming soon)</p>
                     </div>
                 </div>
 
                 <div>
-                     <h4 class="text-xl font-bold text-loyolaYellow mb-4">Quick Links</h4>
-                     <ul class="space-y-2 text-purple-200">
-                         <li><a href="#home" class="hover:text-white hover:underline">Home</a></li>
-                         <li><a href="#hosts" class="hover:text-white hover:underline">About Host Institutions</a></li>
-                         <li><a href="#submission" class="hover:text-white hover:underline">Submit Paper</a></li>
-                         <li><a href="#exhibition" class="hover:text-white hover:underline">Exhibition Packages</a></li>
-                         <li><a href="#" class="hover:text-white hover:underline">Privacy Policy</a></li>
-                     </ul>
+                      <h4 class="text-xl font-bold text-loyolaYellow mb-4 font-serif">Quick Links</h4>
+                      <ul class="space-y-2 text-purple-200">
+                          <li><a href="#home" class="hover:text-white hover:underline">Home</a></li>
+                          <li><a href="#hosts" class="hover:text-white hover:underline">About Host Institutions</a></li>
+                          <li><a href="#submission" class="hover:text-white hover:underline">Submit Paper</a></li>
+                          <li><a href="#exhibition" class="hover:text-white hover:underline">Exhibition Packages</a></li>
+                      </ul>
                 </div>
             </div>
 
-            <div class="text-center pt-4">
-                <p class="text-sm text-purple-300">© 2026 International Conference on Comprehensive Education (ICCE). All Rights Reserved.</p>
+            <div class="text-center pt-4 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-purple-300">© 2026 International Conference on Comprehensive Education (ICCE).</p>
+                <div class="mt-4 md:mt-0 flex gap-4">
+                    <a href="#" class="text-purple-300 hover:text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-purple-300 hover:text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-purple-300 hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
 </body>
 </html>
-
-
